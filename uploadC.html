@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploadation</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        label{
+            display: block;
+            margin: 25px;
+        }
+        .uploadForm{
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+        }
+        form{
+            display: block;
+            text-align: initial;
+            margin: 0 auto;
+            border: 2px solid red;
+        }
+        label:hover{
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        #ButtonSub{
+            display: flex;
+            justify-content: space-around;
+        }
+        .FormElement{
+            border-radius: 25px;
+            box-shadow: 5px 10px #888888;
+        }
+        #sub:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+        #res:hover{
+            cursor: pointer;
+            background-color: red;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+          <div class="imageI">
+            <img
+              src="https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+              alt="Loading..."
+            />
+          </div>
+    
+          <div class="info">
+            <li class="Sname">CHIRAG BIPINBHAI CHAVDA</li>
+            <li class="er">190210116013</li>
+          </div>
+    
+          <div class="spars">
+            <h1 class="spars">SPARS</h1>
+          </div>
+    
+          <div class="logBtn" style="align-self: center">
+            <button id="logOut">LOGOUT</button>
+          </div>
+        </div>
+        <div class="bar">
+            <nav>
+            <ul>
+              <li>  <div class="dropdown">
+          <button class="dropbtn">Dashboard</button>
+          <div class="drop-content">
+            <a href="profile.html" target="new">Profile</a>
+            <a href="activities.html" target="new">Activities</a>
+            <a href="nonCertified.html" target="new">Non Certified</a>
+          </div>
+        </div></li>
+              <li><div class="dropdown">
+          <button class="dropbtn">Upload</button>
+          <div class="drop-content">
+            <a href="upload.html">Techfest</a>
+            <a href="#">Course</a>
+            <a href="#">Intern/Other</a>
+          </div>
+        </div></li>
+              <li>  <div class="dropdown">
+          <button class="dropbtn">Verify</button>
+          <div class="drop-content">
+            <a href="#">In-progress</a>
+            <a href="#">Verified</a>
+          </div>
+        </div></li>
+              <li><div class="dropdown">
+          <button class="dropbtn">Report</button>
+          <div class="drop-content">
+            <a href="#">Weekly</a>
+            <a href="#">Monthly</a>
+            <a href="#">Yearly </a>
+          </div>
+        </div></li>
+              <li><div class="dropdown">
+          <button class="dropbtn">Q&A</button>
+          <div class="drop-content">
+            <a href="#">FAQ</a>
+            <a href="#">New Query</a>
+          </div>
+        </div></li>
+              <li><div class="dropdown">
+          <button class="dropbtn">Contact</button>
+          <div class="drop-content">
+            <a href="#">Team</a>
+          </div>
+        </div></li>
+            </ul>
+        </div>
+      </header>
+
+
+      <div class="uploadForm">
+          <form action="#">
+              <h1 style="text-align: center; background: linear-gradient(red,yellow,blue);" class="FormElement">ENTER THE DETAILS</h1>
+
+            <label for="CourseName">
+                Course Name: 
+                <input type="text" id="CourseName" placeholder="Enter the name Of Course" class="FormElement">
+            </label>
+            <label for="CourseType">
+                Type: 
+                <select name="Type" id="CourseType" class="FormElement">
+                    <option value="1">Online</option>
+                    <option value="2">Offline</option>
+                    <option value="3">Online-CompanyBased</option>
+                    <option value="4">Offline-CompanyBased</option>
+                </select>
+                
+            </label>
+            <label for="CourseLevel" id="radioBtnHai">
+                Level: 
+                <input type="radio" name="type" id="CourseLevel">National
+                <input type="radio" name="type" id="CourseLevel">International
+                <input type="radio" name="type" id="CourseLevel">StateLevel
+            </label>
+            <label for="CourseDescription">
+                Description: 
+                <textarea name="EventDesc" id="CourseDescription" cols="30" rows="2" placeholder="Enter the details of event" class="FormElement"></textarea>
+            </label>
+            <label for="CourseDate">
+                Date From: 
+                <input type="date" name="CourseDate" id="CourseDate" class="FormElement">
+                Date To: 
+                <input type="date" name="CourseDate" id="CourseDate" class="FormElement">
+            </label>
+
+            <label for="Certificate">
+                Upload the Certificate: 
+                <input type="file" name="file" id="Certificate" class="FormElement">
+            </label>
+
+            <label for="Link">
+                Upload the verification Link:
+                <input type="url" name="url" id="Link" class="FormElement">
+            </label>
+
+            <label for="buttonS" id="ButtonSub">
+                <button type="submit" class="FormElement" id="sub">Submit</button>
+                <button type="reset" class="FormElement" id="res">Reset</button>
+            </label>
+
+          </form>
+      </div>
+</body>
+</html>
