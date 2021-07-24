@@ -13,17 +13,14 @@
       }
       .mainTable {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: left;
         border-collapse: collapse;
         text-align: center;
-        /* flex-direction: column; */
       }
       .mainTable{
           border: 2px solid tomato;
       }
-      #Duration {
-        flex-direction: column;
-      }
+      
       label {
         display: flex;
         justify-content: space-between;
@@ -35,23 +32,36 @@
           height: 517px;
       }
 
-      
-      #ActivityType{
-          width: 15%;
-      }
-      #Description{
-          width: 35%;
-      }
-      #level{
-          width: 15%;
-      }
-      #date{
-          width: 15%;
-      }
       .month{
           text-align: initial;
       }
 
+      #ActivitiKaTable{
+        display: flex;
+        align-items: baseline;
+        text-align: start;
+        margin-top: 50px;
+        border-collapse: collapse;
+      }
+     th{
+        font-size: 32px;
+        font-weight: bolder;
+      }
+
+      
+      .ActTab{
+        width: 82%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #ActivitiKaTable  th,#ActivitiKaTable  tr,#ActivitiKaTable  td{
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+
+      
     </style>
   </head>
   <body>
@@ -77,7 +87,60 @@
           <button id="logOut">LOGOUT</button>
         </div>
       </div>
-    </header>
+    
+    
+    
+    
+    
+      <div class="bar">
+        <nav>
+        <ul>
+          <li>  <div class="dropdown">
+      <button class="dropbtn">Dashboard</button>
+      <div class="drop-content">
+        <a href="profile.html" target="new">Profile</a>
+        <a href="activities.html" target="new">Activities</a>
+        <a href="#">Non Certified</a>
+      </div>
+    </div></li>
+          <li><div class="dropdown">
+      <button class="dropbtn">Upload</button>
+      <div class="drop-content">
+        <a href="upload.html">Techfest</a>
+        <a href="uploadC.html">Course</a>
+        <a href="uploadIntern.html">Intern/Other</a>
+      </div>
+    </div></li>
+          <li>  <div class="dropdown">
+      <button class="dropbtn">Verify</button>
+      <div class="drop-content">
+        <a href="#">In-progress</a>
+        <a href="#">Verified</a>
+      </div>
+    </div></li>
+          <li><div class="dropdown">
+      <button class="dropbtn">Report</button>
+      <div class="drop-content">
+        <a href="#">Weekly</a>
+        <a href="#">Monthly</a>
+        <a href="#">Yearly </a>
+      </div>
+    </div></li>
+          <li><div class="dropdown">
+      <button class="dropbtn">Q&A</button>
+      <div class="drop-content">
+        <a href="#">FAQ</a>
+        <a href="#">New Query</a>
+      </div>
+    </div></li>
+          <li><div class="dropdown">
+      <button class="dropbtn">Contact</button>
+      <div class="drop-content">
+        <a href="#">Team</a>
+      </div>
+    </div></li>
+        </ul>
+    </div></header>
 
     <div class="activityHeading">
       <h1>Your Activities</h1>
@@ -95,7 +158,6 @@
               <option value="3">Monthly</option>
             </select>
             <br/> <br>
-            
 
             <div class="year">
               <table>
@@ -151,24 +213,70 @@
         </div>
         <div class="vh"></div>
 
-        <div class="activityTable" id="ActivityType">
-          <h1>ActivityType</h1>
-        </div>
-        <div class="vh"></div>
+        <!-- Yaha se table tag Rakhna hai -->
 
-        <div class="activityTable" id="Description">
-          <h1>Description</h1>
-        </div>
-        <div class="vh"></div>
+        <div class="ActTab">
+          <table id="ActivitiKaTable">
+            
+            <th>
+                ActivityType
+            </th>
+            
+            <th>
+                Description
+            </th>
+    
+            <th>
+                Level
+            </th>
+    
+            <th>
+              Date
+            </th>
 
-        <div class="activityTable" id="level">
-          <h1>Level</h1>
-        </div>
-        <div class="vh"></div>
+            <tr>
+              <td>Cultural</td>
+              <td>It was a Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam est voluptatem maxime molestias repudiandae unde, in obcaecati accusamus dignissimos? Soluta suscipit illo eligendi quia?</td>
+              <td>National</td>
+              <td>22/07/2020</td>
+            </tr>
+            <tr>
+              <td>Cultural</td>
+              <td>It was a Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam est voluptatem maxime molestias repudiandae unde, in obcaecati accusamus dignissimos? Soluta suscipit illo eligendi quia?</td>
+              <td>National</td>
+              <td>22/07/2020</td>
+            </tr>
+            <tr>
+              <td>Cultural</td>
+              <td>It was a Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam est voluptatem maxime molestias repudiandae unde, in obcaecati accusamus dignissimos? Soluta suscipit illo eligendi quia?</td>
+              <td>National</td>
+              <td>22/07/2020</td>
+            </tr>
+            <tr>
+              <td>Cultural</td>
+              <td>It was a Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam est voluptatem maxime molestias repudiandae unde, in obcaecati accusamus dignissimos? Soluta suscipit illo eligendi quia?</td>
+              <td>National</td>
+              <td>22/07/2020</td>
+            </tr>
+            <tr>
+              <td>Cultural</td>
+              <td>It was a Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam est voluptatem maxime molestias repudiandae unde, in obcaecati accusamus dignissimos? Soluta suscipit illo eligendi quia?</td>
+              <td>National</td>
+              <td>22/07/2020</td>
+            </tr>
+            <tr>
+              <td>Cultural</td>
+              <td>It was a Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam est voluptatem maxime molestias repudiandae unde, in obcaecati accusamus dignissimos? Soluta suscipit illo eligendi quia?</td>
+              <td>National</td>
+              <td>22/07/2020</td>
+            </tr>
+  
+          </table>
 
-        <div class="activityTable" id="date">
-          <h1>Date</h1>
         </div>
+        
+        <!-- Yaha Table tag khatam -->
+
       </div>
     </div>
   </body>
